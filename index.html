@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Azula - A Web Storytelling Experiment</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="loader-wrapper" id="loader">
+    <div class="loader"></div>
+  </div>
+  <div class="wrapper">
+    <main class="sky" id="skrollr-body">
+      <div class="farbg"
+        data-0="transform[quadratic]: translate(0, 0%) scale(1.01)"
+        data-800="transform[quadratic]: translate(0, 0.75%) scale(1)"
+      ></div>
+      <div class="bg"
+        data-0="transform[cubic]: translate(0, 0%) scale(1.01)"
+        data-800="transform[cubic]: translate(0, 2%) scale(1)"
+      ></div>
+      <div class="ground"
+        data-0="transform[cubic]: translate(0, 1%)"
+        data-800="transform[cubic]: translate(0, 0%)"
+      ></div>
+      <div class="azula"
+        data-0="opacity[cubic]: 0; transform: scale(0.75) translate(-20%, -15px)"
+        data-750="opacity[cubic]: 1; transform: scale(0.9) translate(-4.5%, 0)"
+      >
+        <div class="highlights"
+          data-0="opacity: 0;"
+          data-700="opacity: 0;"
+          data-730="opacity: 1;"
+          data-740="opacity: 0;"
+          data-800="opacity: 1;"
+        ></div>
+      </div>
+      <div class="lightning"
+        data-0="top:10%; transform: scale(1.2); opacity: 0;"
+        data-700="top:10%; transform: scale(1.2); opacity: 0;"
+        data-730="top:10%; transform: scale(1.2); opacity: 1;"
+        data-740="top:10%; transform: scale(1.2); opacity: 0;"
+        data-800="top:10%; transform: scale(1.2); opacity: 1;"
+      ></div>
+    </main>
+  </div>
+
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js "></script>
+  <script type="text/javascript ">
+    var s = skrollr.init({});
+
+    window.onload = function(e){
+      document.getElementById('loader').classList.add('hidden');
+    }
+  </script>
+</body>
+
+</html>
